@@ -10,7 +10,7 @@ export function MyDrawer() {
 
   return (
     <Drawer.Root
-      snapPoints={["148px", "355px", 1]}
+      snapPoints={["148px", 1]}
       activeSnapPoint={snap}
       setActiveSnapPoint={setSnap}
     >
@@ -63,11 +63,7 @@ export function MyDrawer() {
               {query ? (
                 <div>Result</div>
               ) : (
-                <>
-                  <div style={{ height: "207px" }}>Instruction</div>
-
-                  <div>3</div>
-                </>
+                <div style={{ height: "207px" }}>Instruction</div>
               )}
             </div>
           </div>
