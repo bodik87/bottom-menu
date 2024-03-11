@@ -15,11 +15,11 @@ export function MyDrawer() {
       setActiveSnapPoint={setSnap}
     >
       <Drawer.Trigger asChild>
-        <button>Open Drawer</button>
+        <button className="fixed inset-0">Menu</button>
       </Drawer.Trigger>
-      <Drawer.Overlay className="fixed inset-0 bg-black/40" />
+      <Drawer.Overlay className="fixed inset-0" />
       <Drawer.Portal>
-        <Drawer.Content className="fixed max-w-md mx-auto flex flex-col bg-white border border-gray-200 border-b-none rounded-t-[10px] bottom-0 left-0 right-0 h-full max-h-[calc(100dvh_-_20px)] mx-[-1px] outline-none">
+        <Drawer.Content className="fixed max-w-md mx-auto flex flex-col bg-white border border-gray-200 border-b-none rounded-t-[10px] bottom-0 left-0 right-0 h-full max-h-[calc(100dvh_-_20px)] outline-none">
           <div className="p-4 rounded-t-[10px] flex-1">
             {snap !== 1 ? (
               <div className="flex justify-center">
